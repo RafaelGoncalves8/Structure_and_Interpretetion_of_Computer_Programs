@@ -21,4 +21,4 @@
 
 ;What happens when Alyssa attempts to use this to compute square roots? Explain.
 
-???
+Because of the normal order evaluation of Lisp, it will be an infinite loop.
