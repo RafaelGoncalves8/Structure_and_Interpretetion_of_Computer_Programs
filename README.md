@@ -12,3 +12,5 @@ Exercises from Hal Abelson's, Jerry Sussman's and Julie Sussman's Structure and 
 - 1.06 - ok
 - 1.07 - done with large error (sqrt)
 - 1.08 - ok (cube root)
+- 1.09 - ok (recursion vs iteration)
+- 1.10 - ok (ackermann's function)
