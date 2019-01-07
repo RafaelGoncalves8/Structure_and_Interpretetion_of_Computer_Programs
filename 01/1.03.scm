@@ -1,5 +1,4 @@
-;Exercise 1.3.  Define a procedure that takes three numbers as arguments and
-;returns the sum of the squares of the two larger numbers. 
+;Exercise 1.3.  Define a procedure that takes three numbers as arguments and returns the sum of the squares of the two larger numbers. 
 
 (define (gt a b) (if (> a b) a b))
 
@@ -10,8 +9,3 @@
      (sqr (cond ((= a (gt a (gt b c))) (gt b c))
                 ((= b (gt b (gt b c))) (gt a c))
                 (else (gt a b))))))
-
-;test
-(square-sum-of-larger-numbers 1 2 3)
-;(square-sum-of-larger-numbers 2 1 3)
-;(square-sum-of-larger-numbers 3 2 1)

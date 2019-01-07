@@ -1,6 +1,4 @@
-;Exercise 1.5.  Ben Bitdiddle has invented a test to determine whether the
-;interpreter he is faced with is using applicative-order evaluation or
-;normal-order evaluation. He defines the following two procedures:
+;Exercise 1.05.  Ben Bitdiddle has invented a test to determine whether the interpreter he is faced with is using applicative-order evaluation or normal-order evaluation. He defines the following two procedures:
 
 (define (p) (p))
 
@@ -13,12 +11,10 @@
 
 (test 0 (p))
 
-;What behavior will Ben observe with an interpreter that uses applicative-order
-;evaluation?
+;What behavior will Ben observe with an interpreter that uses applicative-order evaluation?
 ;Ans: infinite loop because when trying to evaluate y it gets stuck in (p)
 
-;What behavior will he observe with an interpreter that uses
-;normal-order evaluation?
+;What behavior will he observe with an interpreter that uses normal-order evaluation?
 ;Ans: 0, because it quits the loop without evaluating y - that is (p)
 
 ;Explain your answer. (Assume that the evaluation rule

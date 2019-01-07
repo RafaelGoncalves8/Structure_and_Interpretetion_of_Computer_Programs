@@ -1,4 +1,4 @@
-;Exercise 1.6. Alyssa P. Hacker doesn’t see why if needs to be provided as a special form. ‘‘Why
+;Exercise 1.06. Alyssa P. Hacker doesn’t see why if needs to be provided as a special form. ‘‘Why
 ;can’t I just define it as an ordinary procedure in terms of cond?’’ she asks. Alyssa’s friend Eva Lu
 ;Ator claims this can indeed be done, and she defines a new version of if:
 
@@ -20,5 +20,4 @@
                         x)))
 
 ;What happens when Alyssa attempts to use this to compute square roots? Explain.
-
-Because of the normal order evaluation of Lisp, it will be an infinite loop.
+;Ans: Because of the applicative order evaluation of Lisp, it will be an infinite loop.

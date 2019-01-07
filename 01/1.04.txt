@@ -1,0 +1,7 @@
+Exercise 1.04. Describe the functioning of the following expression
+
+(define (a-plus-abs-b a b)
+  ((if (> b 0) + -) a b))
+
+if b > 0 the returning value will be a + b
+else it will be a - b (a + abs(b))

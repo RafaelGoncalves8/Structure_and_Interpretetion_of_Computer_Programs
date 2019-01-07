@@ -7,22 +7,21 @@
 ;a square-root procedure that uses this kind of end test. Does this work better for small and large
 ;numbers?
 
+(define (sqrt x)
+  (sqrt-iter 1.0 x))
+
 (define (sqrt-iter guess x)
   (if (good-enough? (improve guess x) guess)
-      guess
+      (improve guess x)
       (sqrt-iter (improve guess x)
                  x)))
 
 (define (good-enough? guess old-guess)
-  (< (abs (/ guess old-guess)) 1.001))
+  (< (- guess old-guess)
+     (abs (* 0.0000001 old-guess))))
 
 (define (improve guess x)
   (average guess (/ x guess)))
 
 (define (average x y)
   (/ (+ x y) 2))
-
-;test
-;(sqrt-iter 1 2)
-;(sqrt-iter 1 10)
-(sqrt-iter 5 3)
