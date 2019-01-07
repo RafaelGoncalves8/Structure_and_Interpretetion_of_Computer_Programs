@@ -10,10 +10,10 @@
 
 ;iterative
 (define (g n)
-  (define (f-iter val counter)
-    (if (< val 3)
-        val
-        (f-iter (- val 1) 
-
-  (f-iter 0 0))
-
+  (define (f-iter acc counter)
+    (if (< counter 3)
+        counter
+        (+ (f-iter (+ acc (- counter 1)) (- counter 1))
+           (* 2 (f-iter (+ acc (- counter 2)) (- counter 2)))
+           (* 3 (f-iter (+ acc (- counter 3)) (- counter 3))))))
+  (f-iter 0 n))
